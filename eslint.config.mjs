@@ -6,6 +6,12 @@ export default [
     plugins: {
       extends: ["airbnb-base/legacy"]
     },
-    ignores: ["dist"]
+    ignores: ["dist"],
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages"
+      ]
+    }
   }
 ];
